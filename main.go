@@ -10,10 +10,10 @@ import (
 	"strings"
 	"syscall"
 
+	"github.com/lensapp/lens-k8s-proxy/pkg/proxy"
 	"k8s.io/cli-runtime/pkg/genericclioptions"
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
 	"k8s.io/klog/v2"
-	"k8s.io/kubectl/pkg/proxy"
 )
 
 // These get overridden at build time: -X main.Version=$VERSION
